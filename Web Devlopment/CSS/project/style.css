@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  z-index: 10;
+}
+.logo{
+      height: 4vh;
+      width: 20vw;
+    }
+header{
+  height: 7vh;
+  width: 100vw;
+  background: #047BD5;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  margin:0 0 0 10px;
+}
+ul{
+  display: flex;
+}
+li{
+    
+  display: inline;
+  margin: 0 3px;
+  
+}
+a{
+    color: white;
+  
+  text-decoration: none;
+}
+
+.search{
+  display: flex;
+  
+  
+  
+}
+input{
+  width:20vw;
+}
+main{
+  height: 88vh;
+}
+footer{
+  height: 30px;
+  color: white;
+  background:#047BD5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  margin: 0 0 0 10px;
+  background: #047BD5;
+  color: white;
+  border: 2px solid whitesmoke;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.big{
+  
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  justify-content: space-between;
+}
+h5{
+  font-family: 'Work Sans', sans-serif; 
+  margin: 20px 10px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  color: green;
+}
+.cards{
+  display: flex;
+  overflow: scroll;
+}
+.big1{
+  margin: 20px 0 30px 0;
+  width:70vw;
+  z-index: -1;
+}
+.row1{
+  background: white;
+}
+
+.big img{
+  margin:15vw;
+}
+
+@media screen and (min-width: 400px){
+  header{
+  height: 15vh;
+  width: 100vw;
+  background: #047BD5;
+  display: flex;
+  align-items: center;
+  }
+  .logo{
+      height: 10vh;
+      width: 12vw ;
+      margin: 0 5vw 0 10px;
+    }
+    li{
+      margin: 0 5vw;
+    }
+    .big{
+      margin: 3vw 0 0 0;
+    }
+    .big1{
+  margin: 20px 0 30px 0;
+  width:25vw;
+  z-index: -1;
+}
+}

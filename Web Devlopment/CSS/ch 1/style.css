@@ -1,0 +1,41 @@
+body{
+  color: white;
+  background: white;
+}
+div{
+  color: pink;
+  background-color: yellow;
+}
+#red{
+  color: red;
+  background-color: yellow;
+  
+}
+#blue{
+  color: blue;
+  background-color: green
+}
+.violet{
+  color: purple;
+  background-color: lightpink;
+}
+
+h1,h2,h3{
+  color: firebrick;
+  background-color: greenyellow;
+}
+
+p.brown{
+  color: brown;
+  background : green;
+}green
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#head{
+    background-color: yellow;
+  }
+ 

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#asmaan img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+#bushes img{
+   
+    position: absolute;
+    bottom: 20vh;
+  
+    overflow: hidden !important;
+}
+#track img{
+    position: relative;
+   top: 70vh;
+   width: 600vw;
+   height: 62vh;
+   animation: drive linear .4s infinite;
+  
+  overflow: hidden;
+}
+body{
+    overflow: hidden;
+ 
+}
+.car img{
+    z-index: 1;
+    position: absolute;
+    width: 24vw;
+  
+}
+#car{
+    animation: shake linear .2s infinite;
+}
+.wheel img{
+    width: 4.5vw;
+}
+.right {
+width:4vw !important ;
+position: relative;
+top: 69vh;
+left: 15.2vw;
+animation: wheel linear .0001s infinite;
+}
+.left{
+position: relative;
+top: 67.5vh;
+left: 3vw;
+display: fixed;
+animation: wheel linear .0001s infinite;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes drive {
+    100%{
+    transform: translateX(-500vw);
+    }
+}
+@keyframes shake {
+    0%
+    {
+        transform: translateX(-2px);
+        transform: translateY(-2px);
+    }
+    55%{
+        transform: translateX(2px);
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateX(-2px);
+        transform: translateY(-2px);
+    }
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<style>
+    .container {
+        background: rgb(0, 255, 38);
+        width: 1px;
+        height: 500px;
+        margin: 14px;
+        margin-right: 14px;
+        margin-left: 14px;
+        padding: 31px 29px 23px 21px;
+        padding-right: 13px;
+        padding-left: 13px;
+        max-width: 735px;
+    }
+
+    .container {
+        margin-top: 8px;
+        padding-top: 39px;
+        border-left-width: 76px;
+        border-left-style: solid;
+        border-top-width: 55px;
+        border-top-style: solid;
+        /* display: flex; */
+        max-width: 692px;
+        max-height: 202px;
+        display: flex;
+        --bs-gutter-x: 9.5rem;
+        --bs-gutter-y: 4;
+    }
+
+    /* h1{ */
+    /* display: inline;
+} */
+    @media (min-width: 1200px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 735px;
+        }
+    }
+</style>
+
+<head>
+    <script>
+        let a;
+        let Time;
+        let date;
+        setInterval(()=>{
+            a = new Date();
+         date=a.toLocaleDateString()
+         Time = `${a.getHours()}:${a.getMinutes()}:${a.getSeconds()}`;
+        document.getElementById('time').innerHTML = Time + ' on ' +   date;
+        },1000)
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <h1></h1>
+    <div class="container">
+        <h1>Current time: </h1>
+        <h1 id="time">sl</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
