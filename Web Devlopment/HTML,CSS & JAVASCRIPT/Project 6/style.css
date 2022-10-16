@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+   
+}
+
+.sidebar{
+    position: absolute;
+    padding: 1px;
+   height: 100vh;
+    /* background-color: red; */
+    background-color: antiquewhite;
+    width: 120px;
+    transition: transform 0.1s ease-in-out ;
+
+}
+.main{
+    /* padding: 65px 0px 0 100px; */
+    padding: 23px;
+    /* background-color: yellow; */
+    /* height: 100vh; */
+    width: 84.456vw;
+}
+.main-Blog{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 21px 0;
+
+ 
+}
+nav ul li a{
+    text-decoration: none;
+    color: azure;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(169, 184, 197);
+    
+}
+nav{
+    padding: 30px 0 0 22px
+    
+}
+.box{
+    height: 80vh;
+    width: 80vw;
+    /* background-color: blueviolet; */
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.devpic{
+    height: 71vh;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+}
+.devimg{
+    height: 50vh;
+}
+.info{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45vw;
+}
+.greet{
+    font-size: 45px;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.about{
+    /* font-size:25px ; */
+    font-family: 'Source Code Pro', monospace;
+}
+.aboutmore{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+button{
+    margin: 25px 3px;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 4px;
+    cursor:pointer;
+    background-color: #2874f0;
+    color: white;
+}
+button:hover{
+    
+    background-color: white;
+    color: black;
+}
+.buttons a{
+    text-decoration: none;
+    color: rgb(32, 68, 96);
+}
+.sidebar1{
+    position: absolute;
+    padding: 1px;
+   height: 135vh;
+    /* background-color: red; */
+    background-color: antiquewhite;
+    width: 120px;
+    transition: transform 0.1s ease-in-out ;
+    overflow: hidden;
+}
+.form h2{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    margin: 3em;
+    
+}
+.form form div{
+    padding: 14px;
+}
+.form form div{
+    margin: 10px;
+}
+form{
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.blogcontainer{
+    margin: 16px;
+}
+.blogcontainer h2{
+    font-family: 'Roboto', sans-serif;
+}
+.skillcontainer {
+    margin:9px;
+    
+}
+.main-intro{
+    /* background-color: yellow; */
+    height: 38em;
+    width: 100%;
+}
+.main-intro p{
+    margin-left: 11px;
+}
+
+.skill{
+    width: 100px;
+    height: 5px;
+    background-color: red;
+    border: 1px solid black;
+}
+.skill-item{
+    display: flex;
+    align-items: center;
+}
+.hundred{
+    width: 265px;
+    background-color: red;
+}
+.fifty{
+    width: 125px;
+    background-color: goldenrod;
+}
+.t5{
+    width: 75px;
+    background-color: aqua;
+}
+.hamburger{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    cursor: pointer;
+}
+.cross{
+    margin-left: 90px;
+}
+.sidebarGo{
+    transform: translate(-191px, 0px);
+        position: absolute
+}
+.crossgayab{
+    display: none;
+    /* background-color: blueviolet; */
+}
+.hamgayab{
+    display: none;
+}
+@media (max-width: 600px){
+    /* *{
+        background: red;
+    } */
+     /* .sidebar{
+        transform: translate(-191px, 0px);
+        position: absolute
+    }  */
+    .devpic{
+        display: none;
+
+    }
+    .form h2{
+        font-family: 'Source Code Pro', monospace;
+        text-align: center;
+        margin: 10vh;
+        
+    }
+    .info{
+        width:75vw;
+        font-size: 16px;
+    }
+    .main{
+        padding:0px ;
+    }
+    /* .main{
+          padding: 0px;
+    }*/
+} 
+@media (min-width: 1200px){
+    .form h2{
+        padding-left: 30vh;
+     
+    }
+    form{
+        margin-left:30vh; 
+    }
+   
+}

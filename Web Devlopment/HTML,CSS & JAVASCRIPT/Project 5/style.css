@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    background:#103092;
+}
+.body{
+    /* background-image: url('bg.jpeg'); */
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.taskbar1{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+    background-color: #f3f3f3;
+   
+}
+.tskright{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 43px;
+    z-index: 110;
+}
+.bgvdo{
+    height: 100vh;
+    width: 100vw;
+    size: 1px;
+}
+.startmenu{
+    position: absolute;
+  
+    width: 100%;
+    bottom: -500px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-out ;
+    
+}
+.startmenu img{
+    border-radius: 20px;
+  
+}
